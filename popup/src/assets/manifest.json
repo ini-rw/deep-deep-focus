@@ -1,0 +1,8 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "deep deep work",
+  "action": {
+    "default_action": "action/index.html"
+  }
+}

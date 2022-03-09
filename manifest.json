@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Deep Deep work",
+  "version": "1.0.0",
+  "description": "Deep Deep work",
+  "background": {
+    "service_worker": "background.es.js"
+  },
+  "action": {
+    "default_popup": "popup/index.html"
+  },
+  "options_page": "option/index.html",
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "permissions": ["activeTab", "storage", "declarativeNetRequest"],
+  "host_permissions": ["http://*/", "https://*/"]
+}

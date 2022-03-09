@@ -1,0 +1,20 @@
+@use "../../styles/variables";
+.switch {
+  width: 40px;
+  height: 20px;
+  border: 2px solid variables.$primary-color;
+  border-radius: 8px;
+  display: flex;
+  transition: 3s ease-in-out;
+  .inner {
+    width: 18px;
+    height: 100%;
+    position: relative;
+    left: 0px;
+    background-color: variables.$dark-color;
+    border-radius: 50%;
+  }
+  &-active {
+    justify-content: end;
+  }
+}
