@@ -1,0 +1,18 @@
+{
+  "name": "@deep/popup",
+  "version": "0.0.1",
+  "description": "common packages for the deep deep focus",
+  "main": "index.ts",
+  "scripts": {
+    "test": "test",
+    "dev": "vite dev",
+    "build": "vite build",
+    "build:watch": "VITE_WATCH=true npm run build"
+  },
+  "keywords": [
+    "react",
+    "typescript"
+  ],
+  "author": "munezerobagira <munezerobagira@gmail.com>",
+  "license": "MIT"
+}

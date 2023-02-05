@@ -1,35 +1,40 @@
 {
   "name": "deep-deep-work",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "author": "Munezero Bagira Sostene <munezerobagira@gmail.com>",
   "scripts": {
-    "dev": "vite",
-    "build": "concurrently   \"npm:build-popup\" \"npm:build-action\" \"npm:build-bg_script\" \"npm:build-content_script\" \"npm:build-assets\"",
-    "preview": "vite preview",
+    "build": "concurrently   \"npm:build-popup\" \"npm:build-option\" \"npm:build-bg_script\" \"npm:build-content_script\" \"npm:build-assets\"",
+    "dev:popup": "vite dev --config config/vite.config.popup.ts",
+    "dev:option": "vite dev --config config/vite.config.option.ts",
     "build-vite": "tsc && vite build",
-    "build-popup": "tsc && vite build --config config/vite.config.popup.ts",
-    "build-action": "tsc && vite build --config config/vite.config.option.ts",
+    "build-option": "tsc && vite build --config config/vite.config.option.ts",
     "build-bg_script": "tsc && vite build --config config/vite.config.bg_script.ts",
     "build-content_script": "tsc && vite build --config config/vite.config.content_script.ts",
     "build-assets": "tsc && vite build --config config/vite.config.assets.ts"
   },
   "dependencies": {
-    "concurrently": "^7.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "uuidv4": "^6.2.12"
+    "@stitches/react": "^1.2.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "uuidv4": "^6.2.13"
   },
   "devDependencies": {
-    "@types/chrome": "^0.0.179",
-    "@types/node": "^17.0.21",
-    "@types/react": "^17.0.33",
-    "@types/react-dom": "^17.0.10",
-    "@vitejs/plugin-react": "^1.0.7",
-    "autoprefixer": "^10.4.2",
+    "@types/chrome": "^0.0.209",
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.0.1",
+    "autoprefixer": "^10.4.13",
+    "concurrently": "^7.6.0",
     "postcss": "^8.4.8",
-    "sass": "^1.49.9",
-    "tailwindcss": "^3.0.23",
-    "typescript": "^4.5.4",
-    "vite": "^2.8.0"
-  }
+    "sass": "^1.57.1",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.4"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "license": "MIT"
 }

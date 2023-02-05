@@ -16,6 +16,6 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["background", "content_script"],
+  "include": ["packages/common", "packages/option", "packages/scripts", "packages/option"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

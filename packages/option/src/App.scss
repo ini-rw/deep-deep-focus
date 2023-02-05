@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+h1 {
+  display: flex;
+}
+body {
+  padding: 10px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.btn {
+  padding: 4px 10px;
+}
