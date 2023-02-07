@@ -4,12 +4,16 @@
   "description": "common packages for the deep deep focus",
   "main": "index.ts",
   "scripts": {
-    "test": "test"
+    "test": "jest test/**/*.test.js"
   },
   "keywords": [
     "react",
     "typescript"
   ],
   "author": "munezerobagira <munezerobagira@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.4.1",
+    "ts-jest": "^29.0.5"
+  }
 }

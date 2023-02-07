@@ -1,5 +1,5 @@
 import randomUID from '../functions/randomUID';
-import { setSitesDataSync } from '@deep/';
+import { setSitesDataSync } from '';
 
 const ADD_SITE = 'ADD_SITE';
 const REMOVE_SITE = 'REMOVE_SITE';

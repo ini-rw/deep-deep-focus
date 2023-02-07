@@ -1,2 +1,4 @@
 import { createContext } from 'react';
-export {};
+export const dataContext = createContext({
+  allowed,
+});

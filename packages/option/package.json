@@ -9,13 +9,13 @@
     "build": "vite build",
     "build:watch": "VITE_WATCH=true npm run build"
   },
-  "dependencies": {
-    "@deep/common": "0.0.1"
-  },
   "keywords": [
     "react",
     "typescript"
   ],
   "author": "munezerobagira <munezerobagira@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.2"
+  }
 }

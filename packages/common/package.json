@@ -4,7 +4,7 @@
   "description": "common packages for the deep deep focus",
   "main": "index.ts",
   "scripts": {
-    "test": "test"
+    "test": "jest */"
   },
   "keywords": [
     "react",
