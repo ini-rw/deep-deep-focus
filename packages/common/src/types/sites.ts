@@ -3,4 +3,4 @@ export interface Site {
   favicon?: string;
   url?: string;
 }
-export type SiteList = Record<string, Site[]>;
+export type SiteListRecord = Record<string, Site[]>;

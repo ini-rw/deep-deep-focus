@@ -14,5 +14,9 @@
     "typescript"
   ],
   "author": "munezerobagira <munezerobagira@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.4.1",
+    "ts-jest": "^29.0.5"
+  }
 }

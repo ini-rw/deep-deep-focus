@@ -1,19 +1,12 @@
-import { createContext } from 'react';
-import { RootStorageObject } from '../types/storage';
+import { configureStore, Store } from '@reduxjs/toolkit';
+import { modeReducer } from './slice/mode.slice';
+import { siteRecordReducer } from './slice/sites.slice';
 
-export const initalData: RootStorageObject = {
-  sites: {
-    allow: {
-      default: [],
-    },
-    block: {
-      default: [],
-    },
+export const store = configureStore({
+  reducer: {
+    sites: siteRecordReducer,
+    mode: modeReducer,
   },
-  mode: {
-    type: 'allow',
-    active: false,
-  },
-};
-export const storeContext = createContext<RootStorageObject>(initalData);
-export const StoreProvider = storeContext.Provider;
+});
+export type RootState = ReturnType<typeof store.getState>;
+export type Dispatch = typeof store.dispatch;

@@ -1,1 +1,4 @@
-export type AvailableMode = 'block' | 'allow';
+export enum BlockModeType {
+  ALLOW = 'ALLOW',
+  BLOCK = 'BLOCK',
+}

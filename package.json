@@ -4,14 +4,17 @@
   "version": "0.0.1",
   "author": "Munezero Bagira Sostene <munezerobagira@gmail.com>",
   "scripts": {
-    "build": "concurrently   \"npm:build-popup\" \"npm:build-option\" \"npm:build-bg_script\" \"npm:build-content_script\" \"npm:build-assets\"",
-    "dev:popup": "vite dev --config config/vite.config.popup.ts",
-    "dev:option": "vite dev --config config/vite.config.option.ts",
-    "build-vite": "tsc && vite build",
-    "build-option": "tsc && vite build --config config/vite.config.option.ts",
-    "build-bg_script": "tsc && vite build --config config/vite.config.bg_script.ts",
-    "build-content_script": "tsc && vite build --config config/vite.config.content_script.ts",
-    "build-assets": "tsc && vite build --config config/vite.config.assets.ts"
+    "dev": "./run.sh yarn  build:watch",
+    "prebuild": "",
+    "build": "",
+    "build:watch": " yarn concurrently \"yarn watch:resources\" \"yarn build:options\" \"yarn build:popup\" \"yarn build:scripts\" ",
+    "build:popup": "yarn workspace @deep/popup build",
+    "build:popup:watch": "yarn workspace @deep/popup build:watch",
+    "build:options": "yarn workspace @deep/options build",
+    "build:options:watch": "yarn workspace @deep/options build:watch",
+    "build:scripts": "yarn workspace @deep/scripts build",
+    "build:scripts:watch": "yarn workspace @deep/scripts build:watch",
+    "watch:resources": "node watch.js"
   },
   "dependencies": {
     "@stitches/react": "^1.2.8",

@@ -2,7 +2,7 @@
 
 A chrome extension that allow to increase your productivity. providing with you the super power to block some websites allowing you to avoid the distraction(for example you might be reading while you wasn't supposed).
 
-## Abbout the project
+## Project structure
 
 The extension is made using react, and typescript
 It have four main component but for now this 3 are relevant

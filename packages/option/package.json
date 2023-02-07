@@ -17,5 +17,9 @@
   "license": "MIT",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.2"
+  },
+  "devDependencies": {
+    "jest": "^29.4.1",
+    "ts-jest": "^29.0.5"
   }
 }
