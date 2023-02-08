@@ -1,4 +1,4 @@
-import { configureStore, Store } from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit';
 import { modeReducer } from './slice/mode.slice';
 import { siteRecordReducer } from './slice/sites.slice';
 

@@ -1,13 +1,13 @@
-import { AvailableMode } from './mode';
-import { SiteList } from './sites';
+import { BlockModeType } from './mode';
+import { SiteListRecord } from './sites';
 
 export interface RootStorageObject {
   sites: {
-    allow: SiteList;
-    block: SiteList;
+    allow: SiteListRecord;
+    block: SiteListRecord;
   };
   mode: {
-    type: AvailableMode;
+    type: BlockModeType;
     active: boolean;
   };
 }

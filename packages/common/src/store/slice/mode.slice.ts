@@ -11,7 +11,7 @@ const initialSites: SiteReducerState = {
 };
 
 export const modeSlice = createSlice({
-  name: 'modeReducer',
+  name: 'mode',
   reducers: {
     setMode: (state, action: PayloadAction<BlockModeType>) => {
       state.blockMode = action.payload;
