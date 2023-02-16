@@ -1,11 +1,11 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { BlockModeType } from '../../types/mode';
 
-interface SiteReducerState {
+export interface {
   blockMode: BlockModeType;
   active: boolean;
 }
-const initialSites: SiteReducerState = {
+const initialSites:  = {
   blockMode: BlockModeType.ALLOW,
   active: false,
 };
