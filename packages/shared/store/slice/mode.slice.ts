@@ -1,11 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { BlockModeType } from '../../types/mode';
+import { BlockModeType, ModeObject } from '../../types/mode';
 
-export interface {
-  blockMode: BlockModeType;
-  active: boolean;
-}
-const initialSites:  = {
+const initialModeData: ModeObject = {
   blockMode: BlockModeType.ALLOW,
   active: false,
 };
@@ -20,6 +16,6 @@ export const modeSlice = createSlice({
       state.active = !state.active;
     },
   },
-  initialState: initialSites,
+  initialState: initialModeData,
 });
 export const modeReducer = modeSlice.reducer;

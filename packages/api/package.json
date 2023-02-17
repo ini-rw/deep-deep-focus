@@ -4,7 +4,9 @@
   "description": "common packages for the deep deep focus",
   "main": "index.ts",
   "scripts": {
-    "test": "jest test/**/*.test.js"
+    "test": "jest test/**/*.test.js",
+    "build": "echo \"Building\"",
+    "build:watch": "echo \"Building watching\""
   },
   "keywords": [
     "react",

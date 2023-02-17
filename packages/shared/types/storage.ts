@@ -11,8 +11,3 @@ export interface RootStorageObject {
     active: boolean;
   };
 }
-export interface StorageResponse<T> {
-  success: boolean;
-  data?: T;
-  error?: Error;
-}

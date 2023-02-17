@@ -1,11 +1,13 @@
 {
-  "name": "@deep/common",
+  "name": "@deep/shared",
   "version": "0.0.1",
   "description": "common packages for the deep deep focus",
   "main": "index.ts",
   "scripts": {
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "build": "echo \"Building\"",
+    "build:watch": "echo \"Building watching\""
   },
   "keywords": [
     "react",
