@@ -1,3 +1,9 @@
+// <reference types="@types/chrome"/>
+export interface StorageResponse<T> {
+  success: boolean;
+  data?: T;
+  error?: Error;
+}
 export class SyncStorage {
   static async get<T>(key: string) {
     try {

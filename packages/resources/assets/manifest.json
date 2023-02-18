@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "description": "Deep Deep work ",
   "background": {
-    "service_worker": "background.umd.js"
+    "service_worker": "background.js"
   },
   "action": {
     "default_popup": "popup/index.html"

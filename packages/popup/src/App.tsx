@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import './App.scss';
 import ToggleSwitch from './components/ToggleSwitch/ToggleSwitch';
-// import { getFocusModeSync, setFocusModeSync } from '../../helpers/functions';
+
 import React from 'react';
 const text: { focus: string; unfocus: string } = {
   focus: 'You are in focus mode, so try to focus',

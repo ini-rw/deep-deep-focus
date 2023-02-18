@@ -5,15 +5,8 @@
   "author": "Munezero Bagira Sostene <munezerobagira@gmail.com>",
   "scripts": {
     "dev": "./run.sh yarn  build:watch",
-    "prebuild": "",
-    "build": "",
-    "build:watch": " yarn concurrently \"yarn watch:resources\" \"yarn build:options\" \"yarn build:popup\" \"yarn build:scripts\" ",
-    "build:popup": "yarn workspace @deep/popup build",
-    "build:popup:watch": "yarn workspace @deep/popup build:watch",
-    "build:options": "yarn workspace @deep/options build",
-    "build:options:watch": "yarn workspace @deep/options build:watch",
-    "build:scripts": "yarn workspace @deep/scripts build",
-    "build:scripts:watch": "yarn workspace @deep/scripts build:watch",
+    "build": "yarn workspaces run build",
+    "build:watch": " yarn workspaces run build:watch && yarn run watch:resources",
     "watch:resources": "node watch.js"
   },
   "dependencies": {
