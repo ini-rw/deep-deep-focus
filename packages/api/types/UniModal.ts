@@ -1,4 +1,4 @@
-import { SyncStorage } from '@deep/common/services/SyncStorage';
+import { SyncStorage } from '@deep/shared/services/SyncStorage';
 export default abstract class UniModal {
   static PersistentStorage = SyncStorage;
   static MODEL_NAME: string;

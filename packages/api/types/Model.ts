@@ -1,4 +1,4 @@
-import { SyncStorage } from '@deep/common/services/SyncStorage';
+import { SyncStorage } from '@deep/shared/services/SyncStorage';
 import { uuid } from 'uuidv4';
 export interface ModelObject {
   id: string;
@@ -8,7 +8,7 @@ export interface ModelObject {
 export default abstract class Model {
   static PersistentStorage = SyncStorage;
   static MODEL_NAME: string;
-  private _values: object;
+  private _values!: object;
   set values(values: object) {
     this._values = values;
   }
@@ -18,6 +18,9 @@ export default abstract class Model {
 
   constructor(values: object) {
     this.values = values;
+  }
+  static async initialize() {
+    await Model.PersistentStorage.set<object[]>(Model.MODEL_NAME, []);
   }
   static async create(values: object): Promise<object> {
     const previousData = (await (await Model.PersistentStorage.get<object[]>(Model.MODEL_NAME)).data) || [];

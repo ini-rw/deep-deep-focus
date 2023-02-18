@@ -1,5 +1,5 @@
 {
-  "name": "@deep/options",
+  "name": "@deep/option",
   "version": "0.0.1",
   "description": "common packages for the deep deep focus",
   "main": "index.ts",
@@ -19,6 +19,7 @@
     "@reduxjs/toolkit": "^1.9.2"
   },
   "devDependencies": {
+    "@types/chrome": "^0.0.215",
     "jest": "^29.4.1",
     "ts-jest": "^29.0.5"
   }

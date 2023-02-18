@@ -7,7 +7,7 @@ export default defineConfig({
   base: '/option/',
   plugins: [react()],
   build: {
-    outDir: resolve(__dirname, '..', 'extension', 'option'),
+    outDir: resolve(__dirname, '..', '..', 'extension', 'option'),
     watch: process.env.VITE_WATCH ? {} : undefined,
     emptyOutDir: true,
   },
